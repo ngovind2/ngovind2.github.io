@@ -1,3 +1,25 @@
+
+// Imports
+@import url('//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css');
+
+// Mixins
+.transition (@prop: all, @time: 1s, @ease: linear) {
+	-webkit-transition: @prop @time @ease;
+	-moz-transition: @prop @time @ease;
+	-o-transition: @prop @time @ease;
+	-ms-transition: @prop @time @ease;
+	transition: @prop @time @ease;
+}
+
+.universal-inline-block {
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+  	margin: 0.3em;
+}
+
+
+
 html {
 	background: url(images/landing.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -6,13 +28,13 @@ html {
   background-size: cover;
 }
 
-body {
-  height: 100%;
-  background-image: url("images/landing.png");
-  background-color: #000000;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: right top;
-  
+a.socialIcons {
+float:right;
+width:40px;
+margin-right: 20px;
 }
 
+a.socialIcons:hover {
+opacity: 0.6;
+filter:alpha(opacity=60);
+}
