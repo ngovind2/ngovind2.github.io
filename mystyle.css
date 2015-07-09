@@ -95,7 +95,7 @@ h1 {
 	width: 88%;
 	text-align: right;
 	padding-bottom: 10px;
-	font: lighter 64pt "Helvetica Neue", helvetica, sans-serif;
+	font: 100 64pt "Helvetica Neue", helvetica, sans-serif;
 	color: white;
 	letter-spacing: 10px;
 	display: inline;
@@ -125,7 +125,7 @@ h1 {
 :link {
 	color: #e0c1f4;
 	text-decoration: none;
-	font-weight: 100;
+	font-weight: lighter;
 } 
 
 :visited {
@@ -134,12 +134,12 @@ h1 {
 } 
 
 div p {
-	font: 100 16pt "Helvetica Neue", helvetica, sans-serif;
+	font: lighter 16pt "Helvetica Neue", helvetica, sans-serif;
 	color: white;
 }
 
 div>p {
-	font: 100 20pt "Helvetica Neue", helvetica, sans-serif;
+	font: lighter 20pt "Helvetica Neue", helvetica, sans-serif;
 	text-align: left;
 	letter-spacing: 0.1em;
 	padding: 20px;
@@ -162,28 +162,11 @@ td {
 
 td.text {
 	padding-left: 10px;
-	font: 100 16pt "Helvetica Neue", helvetica, sans-serif;
+	font: lighter 16pt "Helvetica Neue", helvetica, sans-serif;
 	color: white;
 	letter-spacing: 1px;
 }
 
 img.decoration{
 	height: 90%;
-}
-
-/* Mixins */
-.transition (@prop: all, @time: 1s, @ease: linear) {
-	-webkit-transition: @prop @time @ease;
-	-moz-transition: @prop @time @ease;
-	-o-transition: @prop @time @ease;
-	-ms-transition: @prop @time @ease;
-	transition: @prop @time @ease;
-}
-
-
-.universal-inline-block {
-	display: inline-block;
-	zoom: 1;
-	*display: inline;
-  	margin: 0.3em;
 }
