@@ -151,12 +151,12 @@
 	/* Gallery */
 
 	.gallery {
-		width: calc(100% - 45px);
-		min-width: 1125px;
+		width: calc(100% - 35px);
+		min-width: 1135px;
 		max-width: 1200px;
 		padding-bottom: 25px;
 		overflow: hidden;
-		margin: 35px 10px 0px 10px;
+		margin: 35px 10px 0px 0px;
 	}
 
 	.gallery h1 {
