@@ -1,66 +1,215 @@
 <!DOCTYPE html>
-<html lang="en-US">
-
+<html lang="en">
 <head>
-	<title>Niv Govindaraju</title>
-	<meta name="description" content="A site to showcase Niv Govindaraju's portfolio" />
-	<link href="mystyle.css" type="text/css" rel="stylesheet">
+  <title>Niv Govindaraju</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width" >
+  <meta name="description" content="A portfolio to showcase Niv Govindaraju's experience and projects.">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href='http://fonts.googleapis.com/css?family=League+Script|Open+Sans:300,400,600,800' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="mystyle.css">
+  <link rel="stylesheet" href="mystyle2.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="index.js"></script>
 </head>
 
-<body> 
+<body>
 
-	<header>
-		<ul>
-			<li class="icons"><a class="socialIcons" href="mailto:nivetha.gov@gmail.com">
-				<img class="socialIcons" src="images/email.png" alt="Email" title="Send me an email" /></a>
-			</li>
+	<div class="socialIcons">
+		<div class="col-xs-12">
+			<ul class="list-group list-inline">					
+				<li class="list-group-item">
+					<a href="https://ca.linkedin.com/in/ngovindaraju"> <img src="images/linkedin.png" data-toggle="tooltip" alt="LinkedIn" data-placement="auto bottom" title="View my LinkedIn profile"></a>
+				</li>
+				<li class="list-group-item">
+					<a href="https://www.github.com/ngovind2"><img src="images/github.png" alt="GitHub" data-toggle="tooltip" data-placement="auto bottom" title="View my GitHub portfolio"></a>
+				</li>
+				<li class="list-group-item">
+					<a href="mailto:nivetha.gov@gmail.com"><img src="images/email.png" alt="Email" data-toggle="tooltip" data-placement="auto bottom" title="Send me an email"></a>
+				</li>
+			</ul>
+		</div>
+	</div> <!-- end of socialIcons -->
 
-			<li class="icons"><a class="socialIcons" href="http://www.github.com/ngovind2">
-				<img class="socialIcons" src="images/github.png" alt="GitHub" title="View my GitHub portfolio"/></a>
-			</li>
+  <div class="container-fluid">
+		<div class="row header">
+			<div class="col-xs-12 col-sm-3 profImg">
+				<img src="images/profile.jpg" class="img-circle" alt="profile image"/>
+			</div>
 
-			<li class="icons"><a class="socialIcons" href="https://ca.linkedin.com/in/ngovindaraju">
-				<img class="socialIcons" src="images/linkedin.png" alt="LinkedIn" title="View my LinkedIn profile"/></a>
-			</li>
-		</ul>
-	<header>
+			<div class="col-xs-12 col-sm-9 menu">
+				<pre class="glow-white">niv govindaraju</pre>
+				<hr>
+				<ul class= "nav nav-pills">
+					<li class="active"><a data-toggle="pill" href="#about" role="tab" aria-controls="about">about</a></li>
+					<li><a data-toggle="pill" href="#experience" role="tab" aria-controls="experience">experience</a></li>
+					<li><a data-toggle="pill" href="#projects" role="tab" aria-controls="projects">projects</a></li>
+					<li><a class= "last" data-toggle="pill" href="#interests" role="tab" aria-controls="interests">interests</a></li>
+				</ul>
+			</div>
+		</div> <!-- end of header row -->
 
-	<div id="main">
+		<div class="tab-content">
 
-		<hr />
+			<!-- ABOUT -->
+			<div id="about" class="tab-pane fade in active" role="tabpanel">
+				<div class="row">
+					<div class="col-xs-12 col-sm-3 facts">
+						<table>
+							<tr>
+								<th colspan="2"> fast facts</th>
+							</tr>
+							<tr>
+								<td><img src="images/wits.png" alt=""></td>
+								<td><p>Western's Women in Tech Society founder</p></td>
+							</tr>
+							<tr>
+								<td><img src="images/languages.png" alt=""></td>
+								<td><p>Fluent in English &amp French</p></td>
+							</tr>
+							<tr>
+								<td><img src="images/scholars.png" alt=""></td>
+								<td><p>Western Scholar's Electives candidate</p></td>
+							</tr>
+						</table>
+					</div>
+					<div class="col-xs-12 col-sm-9 bio">
+						<p>I'm a junior in Computer Science at the University of Waterloo (previously at Western University).</p>
+						<p>I'm a quick learner with an entrepreneurial mindset. I love to be challenged and take on new experiences.</p>
+						<p>I'm also a <a href="https://www.registrar.uwo.ca/student_finances/scholarships_awards/national_scholarship_program.html">Western national scholar</a>, a <a href="https://www.nserc-crsng.gc.ca">NSERC-USRA</a> recipient, a <a href="https://squareup.com/code-camp/college">College Code Camp</a> participant &amp a <a href="https://www.shad.ca">Shad Valley</a> alumna.</p>
+					</div>
+				</div> <!-- end of row -->
+				<div class="row gallery">
 
-		<div id="profile">
-			<img class="bordered profile" src="images/profile.jpg" alt="Profile picture"/>
-			<h1 class="profile">niv govindaraju</h1>
-		</div> <!-- end of title --> 
+					<h1 class="glow-white">In a nutshell...</h1>
+
+					<div class="col-xs-12 col-sm-3 skills image-effect-rotation">	
+						<div class="image-side">
+						</div>
+						<div class="text-side">
+							<h3>Technical Skills</h3>
+							<div>
+								<h4>Proficient in:</h4>
+								<ul>
+									<li>Java</li>
+									<li>C++</li>
+									<li>HTML & CSS</li>
+									<li>Visual Basic for Applications</li>
+								</ul>
+								<h4>Experience with:</h4>
+								<ul>
+									<li>C</li>
+									<li>Javascript</li>
+									<li>Ruby on Rails</li>
+									<li>UNIX tools & scripting</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-sm-4 coursework image-effect-rotation">
+						<div class="image-side">
+						</div>
+						<div class="text-side">
+							<h3>Coursework</h3>
+							<i class="control_next">></i>
+							 <i class="control_prev"><</i>
+							<div id="slider">
+							  <ul>
+							    <li>
+							    	<div>
+								    	<h4>2013-2014</h4>
+											<p>Computer Science Fundamentals I</p>
+											<p>Calculus I</p>
+											<p>Calculus & Probability with Biological Applications</p>
+											<p>General Biology I & II</p>
+											<p>Discovering Chemical Structure</p>
+											<p>Discovering Chemical Energetics</p>
+											<p>Personal Determinants of Health</p>
+											<p>Introductory Psychology</p>
+											<p>Scholar's Seminar Course: Art History & Science</p>
+										</div>
+							    </li>
+							    <li>
+							    	<div>
+							    		<h4>2014-2015</h4>
+											<p>Applied Logic for Computer Science</p>
+											<p>Software Tools & Systems Programming</p>
+											<p>Basic Data Structures & Algorithms</p>
+											<p>Computer Science Fundamentals II</p>
+											<p>Discrete Structures for Computing</p>
+											<p>Computer Organization</p>
+											<p>Introductory Physics I & II</p>
+											<p>French for Healthcare Professionals</p>
+											<p>Supervised Individual Research I</p>
+										</div>
+							    </li>
+							    <li>
+							    	<div>
+								    	<h4>2015-2016</h4>
+								    	<p>Computer Organization & Design</p>
+											<p>Calculus 2</p>
+											<p>Algebra for Honors Mathematics</p>
+											<p>Object-Oriented Software Development</p>
+											<p>Linear Algebra for Honors Mathematics</p>
+											<p>Probability</p>
+											<p>Organizational Behaviour</p>
+											<p>Communications in Math & CS</p>
+											<p>Intro to Academic Writing</p>
+										</div>
+							    </li>
+							  </ul>  
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-sm-5 awards image-effect-rotation">
+						<div class="image-side">
+						</div>
+						<div class="text-side">
+							<h3>Achievements</h3>
+							<ul>
+								<li><a href="https://squareup.com/code-camp/college">Square College Code Camp <span>(2015)</span></a></li>
+								<li><a href="http://www.nserc-crsng.gc.ca/Students-Etudiants/UG-PC/USRA-BRPC_eng.asp">National Science & Engineering Research Council USRA Award <span>(2015)</span></a></li>
+								<li><a href="http://www.registrar.uwo.ca/student_finances/scholarships_awards/national_scholarship_program.html">Western University National President's Entrance Award <span>(2013-2017)</span></a></li>
+								<li><a href="http://www.millerthomson.com/en/news-and-events/news/miller-thomson-foundation-awards-scholarships-1">Miller Thomson Foundation National Scholarship <span>(2013)</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div> <!-- end of row -->
+			</div> <!-- end of ABOUT -->
 
 
-		<table id="quickFacts">
-			<tr>
-				<th colspan="2">Quick Facts</th>
-			</tr>
-				<td><img class="decoration" src="images/wits.png" alt=""></td>
-				<td class="text">Western's Women in Tech Society founder</td>
-			<tr>
-				<td><img class="decoration" src="images/languages.png" alt=""></td>
-				<td class="text">Fluent in English &amp French</td>
-			</tr>
-			<tr>
-				<td><img class="decoration" src="images/scholars.png" alt=""></td>
-				<td class="text">Western Scholar's Electives candidate</td>
-			</tr>
-		</table> <!-- end of quickFacts -->
+			<!-- EXPERIENCE -->
+			<div id="experience" class="tab-pane fade construction" role="tabpanel">
+				<div class="row">
+					<div class="col-xs-12">
+						<p>Coming soon... Check out my <a href="https://ca.linkedin.com/in/ngovindaraju">LinkedIn</a> in the meantime!</p>
+					</div>
+				</div> <!-- end of row -->
+			</div> <!-- end of EXPERIENCE -->
 
-		<div id="bio">
-			<p class="one">I'm a sophomore in Computer Science at the University of Western Ontario, Canada.</p>
-			<p class="two">I'm a quick learner with an entrepreneurial mindset who loves taking on new experiences.</p>
-			<p class="three">I'm also a <a href="www.registrar.uwo.ca/student_finances/scholarships_awards/national_scholarship_program.html">Western national scholar</a>, a <a href="www.nserc-crsng.gc.ca">NSERC-USRA</a> recipient &amp a <a href="www.shad.ca">Shad</a> alumnus.</p>
-		</div> <!-- end of bio-->
+			<!-- PROJECTS -->
+			<div id="projects" class="tab-pane fade construction" role="tabpanel">
+				<div class="row">
+					<div class="col-xs-12">
+						<p>Coming soon... Until then, you can find me on <a href="https://www.github.com/ngovind2">GitHub</a>.</p>
+					</div>
+				</div> <!-- end of row -->
+			</div> <!-- end of PROJECTS -->
 
+			<!-- INTERESTS -->
+			<div id="interests" class="tab-pane fade construction" role="tabpanel">
+				<div class="row">
+					<div class="col-xs-12">
+						<p>Coming soon...</p>
+					</div>
+				</div> <!-- end of row -->
+			</div> <!-- end of INTERESTS -->
 
-	</div> <!-- end of main -->
-
+		</div> <!-- end of tab-content -->
+	</div> <!-- end of container-fluid -->
 </body>
-
 </html>
-
